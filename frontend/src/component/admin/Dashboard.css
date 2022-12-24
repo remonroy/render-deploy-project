@@ -1,0 +1,75 @@
+.dashboard {
+  width: 100vw;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+  border-right: 1px solid #ddd;
+}
+.dashboardContainer {
+  background-color: white;
+  padding: 3rem 0;
+}
+
+.dashboardContainer > h1 {
+  font: 400 2rem "Roboto";
+  text-align: center;
+  margin: 1rem;
+  color: #333;
+}
+.summery > div {
+  display: flex;
+  justify-content: center;
+}
+
+.summery > div > p {
+  background-color: orange;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font: 300 1.2rem "Roboto";
+}
+.summery2 > a {
+  text-decoration: none;
+  margin: 2rem;
+  background-color: tomato;
+  width: 10vmax;
+  height: 10vmax;
+  text-align: center;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  font: 400 1.4rem "Roboto";
+  color: white;
+}
+.summery2 > a:first-child {
+  background-color: skyblue;
+  color: white;
+}
+.summery2 > a:last-child {
+  background-color: orange;
+  color: white;
+}
+.lineChart {
+  width: 70%;
+  margin: auto;
+}
+.lineDoughnut {
+  width: 40%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+  }
+  .summery2 > a {
+    font: 300 1rem "Roboto";
+    margin: 1.2rem;
+    padding: 0.3rem;
+  }
+}

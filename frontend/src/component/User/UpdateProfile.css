@@ -1,0 +1,128 @@
+.updateProfileContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background-color: rgba(231, 231, 231);
+}
+h2.updateProfileHeading {
+  text-align: center;
+  margin: 1vmax auto;
+  color: rgba(0, 0, 0, 0.664);
+  font: 500 2.2vmax "Roboto";
+  border-bottom: 2px solid #ddd;
+  width: 50%;
+  padding: 1.1vmax;
+}
+.updateProfileBox {
+  width: 30vmax;
+  height: 70vh;
+  background: white;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.updateProfileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  height: 45vh;
+  justify-content: space-around;
+  margin: auto;
+  transition: all 0.3s;
+}
+.updateProfileForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.updateProfileForm > div > input {
+  width: 100%;
+  padding: 1vmax 4vmax;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding-right: 1vmax;
+  outline: none;
+  border-radius: 4px;
+  font: 300 0.9vmax Cursive;
+}
+
+.updateProfileForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#updateProfileImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+.updateProfileBtn {
+  border: none;
+  background-color: tomato;
+  width: 100%;
+  padding: 0.8vmax;
+  font: 300 1vmax "Roboto";
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.updateProfileBtn:hover {
+  background-color: rgba(179, 66, 46);
+}
+
+div#updateProfileImage > input {
+  display: flex;
+  padding: 0;
+}
+
+div#updateProfileImage > input::file-selector-button {
+  width: 100%;
+  padding: 0.8vmax;
+  font: 300 0.8vmax Cursive;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .updateProfileContainer {
+    background-color: white;
+  }
+  .updateProfileBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .updateProfileForm {
+    padding: 1vmax;
+  }
+  .updateProfileForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 400 2.2vmax Cursive;
+  }
+  .updateProfileForm > div > svg {
+    font-size: 20px;
+  }
+
+  .updateProfileBtn {
+    padding: 2vmax;
+    font: 300 2.2vmax "Roboto";
+  }
+
+  div#updateProfileImage > input::file-selector-button {
+    padding: 2vmax;
+    font: 300 2vmax Cursive;
+  }
+  #updateProfileImage > img {
+    width: 7vmax;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.productListContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.productListContainer > h3 {
+  font: 400 2rem "Roboto";
+  margin: 1rem auto;
+  text-align: center;
+}
+.productListTables svg {
+  font-size: 17px;
+}
+.productListTables a {
+  color: black;
+}
+.productListTables svg:hover,
+.productListTables a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .productListTables {
+    font-size: 1rem;
+  }
+  .MuiDataGrid-columnHeaderTitleContainer > div {
+    font-size: 1rem;
+  }
+}

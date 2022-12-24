@@ -1,0 +1,99 @@
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shippingBox {
+  width: 30vw;
+  background-color: white;
+  height: 90vh;
+}
+
+h2.shippingHeading {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font: 400 2vmax "Roboto";
+  padding: 1vmax;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+form.shippingForm {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 1vmax;
+  transition: 0.3s;
+}
+
+form.shippingForm > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+form.shippingForm > div > input,
+form.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  width: 100%;
+  padding-right: 1vmax;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  font: 400 1vmax cursive;
+}
+form.shippingForm > div > svg {
+  position: absolute;
+  font-size: 1.9vmax;
+  transform: translateX(1vmax);
+  color: rgba(0, 0, 0, 0.623);
+}
+input.shippingBtn {
+  width: 100%;
+  background-color: tomato;
+  border: none;
+  padding: 1vmax;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+input.shippingBtn:hover {
+  background-color: rgb(179, 67, 46);
+}
+
+/* -------shippingStep class -----------*/
+/* .MuiStepConnector-completed {
+  background-color: tomato;
+} */
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 100%;
+    height: 90vh;
+  }
+  h2.shippingHeading {
+    padding: 4vmax;
+    font-size: 4vmax;
+  }
+  form.shippingForm > div > input,
+  form.shippingForm > div > select {
+    padding: 2vmax 9vmax;
+    font-size: 2.6vmax;
+  }
+  form.shippingForm > div > svg {
+    font-size: 6vmax;
+    transform: translateX(11px);
+  }
+  input.shippingBtn {
+    padding: 2vmax;
+    font-size: 2vmax;
+  }
+}
